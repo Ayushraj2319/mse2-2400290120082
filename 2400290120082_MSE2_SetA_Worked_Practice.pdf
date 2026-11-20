@@ -1,0 +1,447 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R 21 0 R 23 0 R 25 0 R 27 0 R 29 0 R 31 0 R ] /Count 13 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+6 0 obj
+<< /Length 2046 >>
+stream
+0 0 0 rg BT /F2 18 Tf 1 0 0 1 42 744 Tm (Practice cover) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 42 726 Tm (MSE-II: Docker & Docker Compose Debugging Lab - Set A) Tj ET
+0.9 w 42 710 m 570 710 l S
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 682.5 Tm (Worked practice guide for Ayush Raj | Roll No: 2400290120082 | Section: CS/B) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 664.5 Tm (This is a practice walkthrough, not a real terminal screenshot or a completed exam) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 650.5 Tm (submission. Terminal panels in this PDF are illustrative examples; command output and) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 636.5 Tm (wording can differ by Docker version.) Tj ET
+0 0 0 rg BT /F2 12 Tf 1 0 0 1 42 616 Tm (What this guide includes) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 596.5 Tm (The four starter mistakes in order, example reason sentences, the manual docker run) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 582.5 Tm (task, the bind mount and environment updates, the health check, and complete final file) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 568.5 Tm (contents.) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 550.5 Tm (Use your own terminal to rehearse each step. For actual evidence, capture your own whole) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 536.5 Tm (terminal window with the required roll-number/time prompt visible. Never present these) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 522.5 Tm (illustrative panels as screenshots.) Tj ET
+0 0 0 rg BT /F2 12 Tf 1 0 0 1 42 502 Tm (Your values) Tj ET
+0 0 0 rg BT /F2 9 Tf 1 0 0 1 42 483 Tm (Settings used in this walkthrough) Tj ET
+q 0.10 0.12 0.15 rg 42 430 528 46 re f Q
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 462.8 Tm (ROLL_NO=2400290120082) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 450.8 Tm (HOST_PORT=8082) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 438.8 Tm (Second container port=8083) Tj ET
+0.5 w 42 34 m 570 34 l S
+0 0 0 rg BT /F1 8 Tf 1 0 0 1 42 18 Tm (Ayush Raj | Roll No: 2400290120082 | Practice example - illustrative output) Tj ET
+0 0 0 rg BT /F1 8 Tf 1 0 0 1 555 18 Tm (1) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 1669 >>
+stream
+0 0 0 rg BT /F2 18 Tf 1 0 0 1 42 744 Tm (Step 0: Set up) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 42 726 Tm (Use the actual folder and capture S0 yourself.) Tj ET
+0.9 w 42 710 m 570 710 l S
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 682.5 Tm (Create mse2_2400290120082 and the four starter files exactly as given. In .env use the) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 668.5 Tm (confirmed roll number; 8000 + 82 = 8082.) Tj ET
+0 0 0 rg BT /F2 9 Tf 1 0 0 1 42 651 Tm (.env) Tj ET
+q 0.10 0.12 0.15 rg 42 610 528 34 re f Q
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 630.8 Tm (ROLL_NO=2400290120082) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 618.8 Tm (HOST_PORT=8082) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 588.5 Tm (In index.html replace YOUR_NAME with Ayush Raj and YOUR_ROLL_NO with 2400290120082. In) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 574.5 Tm (your own terminal, set the prompt and list hidden files:) Tj ET
+0 0 0 rg BT /F2 9 Tf 1 0 0 1 42 557 Tm (Linux, macOS, WSL, or Git Bash) Tj ET
+q 0.10 0.12 0.15 rg 42 504 528 46 re f Q
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 536.8 Tm (export ROLL_NO=2400290120082) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 524.8 Tm (export PS1='[$ROLL_NO \\t] \\w \\$ ') Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 512.8 Tm (ls -a) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 482.5 Tm (S0 should be a fresh, uncropped capture showing the customized prompt, ls -a, and .env,) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 468.5 Tm (index.html, Dockerfile, and docker-compose.yml.) Tj ET
+0.5 w 42 34 m 570 34 l S
+0 0 0 rg BT /F1 8 Tf 1 0 0 1 42 18 Tm (Ayush Raj | Roll No: 2400290120082 | Practice example - illustrative output) Tj ET
+0 0 0 rg BT /F1 8 Tf 1 0 0 1 555 18 Tm (2) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 1876 >>
+stream
+0 0 0 rg BT /F2 18 Tf 1 0 0 1 42 744 Tm (Q1\(a\): Compose key typo) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 42 726 Tm (First issue reported by docker compose.) Tj ET
+0.9 w 42 710 m 570 710 l S
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 682.5 Tm (Starter mistake: the service uses port:, but the Compose field is ports:. Change only) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 668.5 Tm (that key for this step.) Tj ET
+0 0 0 rg BT /F2 9 Tf 1 0 0 1 42 651 Tm (Change this) Tj ET
+q 0.10 0.12 0.15 rg 42 610 528 34 re f Q
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 630.8 Tm (    port:) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 618.8 Tm (    ports:) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 588.5 Tm (Example reason: I changed port to ports because Compose uses ports to configure) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 574.5 Tm (published ports.) Tj ET
+0 0 0 rg BT /F2 9 Tf 1 0 0 1 42 557 Tm (Illustrative initial terminal output - not a screenshot) Tj ET
+q 0.10 0.12 0.15 rg 42 492 528 58 re f Q
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 536.8 Tm ($ docker compose up -d --build) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 524.8 Tm (validating docker-compose.yml: services.web additional property) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 512.8 Tm ("port" is not allowed) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 500.8 Tm (\(Exact wording depends on the Compose version.\)) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 470.5 Tm (E1 is your own first error capture. E2 is your reason sentence. For E3, show the) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 456.5 Tm (corrected compose line with the eventual successful command/output; capture real output) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 442.5 Tm (after all four fixes.) Tj ET
+0.5 w 42 34 m 570 34 l S
+0 0 0 rg BT /F1 8 Tf 1 0 0 1 42 18 Tm (Ayush Raj | Roll No: 2400290120082 | Practice example - illustrative output) Tj ET
+0 0 0 rg BT /F1 8 Tf 1 0 0 1 555 18 Tm (3) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 10 0 R >>
+endobj
+12 0 obj
+<< /Length 1763 >>
+stream
+0 0 0 rg BT /F2 18 Tf 1 0 0 1 42 744 Tm (Q1\(b\): Dockerfile image tag typo) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 42 726 Tm (Second issue, after correcting port to ports.) Tj ET
+0.9 w 42 710 m 570 710 l S
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 682.5 Tm (Starter mistake: FROM nginx:alpne names a tag that does not exist. Correct the spelling) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 668.5 Tm (to nginx:alpine.) Tj ET
+0 0 0 rg BT /F2 9 Tf 1 0 0 1 42 651 Tm (Change this) Tj ET
+q 0.10 0.12 0.15 rg 42 610 528 34 re f Q
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 630.8 Tm (FROM nginx:alpne) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 618.8 Tm (FROM nginx:alpine) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 588.5 Tm (Example reason: I changed alpne to alpine because nginx:alpine is the valid image tag) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 574.5 Tm (used by the lab.) Tj ET
+0 0 0 rg BT /F2 9 Tf 1 0 0 1 42 557 Tm (Illustrative build failure - not a screenshot) Tj ET
+q 0.10 0.12 0.15 rg 42 492 528 58 re f Q
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 536.8 Tm ($ docker compose up -d --build) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 524.8 Tm ([+] Building ...) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 512.8 Tm (failed to solve: nginx:alpne: not found) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 500.8 Tm (\(The registry error text can vary.\)) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 470.5 Tm (E1 should show the real build error after the Q1\(a\) correction. Keep the change limited) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 456.5 Tm (to the FROM line before rerunning the same compose command.) Tj ET
+0.5 w 42 34 m 570 34 l S
+0 0 0 rg BT /F1 8 Tf 1 0 0 1 42 18 Tm (Ayush Raj | Roll No: 2400290120082 | Practice example - illustrative output) Tj ET
+0 0 0 rg BT /F1 8 Tf 1 0 0 1 555 18 Tm (4) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 12 0 R >>
+endobj
+14 0 obj
+<< /Length 1944 >>
+stream
+0 0 0 rg BT /F2 18 Tf 1 0 0 1 42 744 Tm (Q1\(c\): COPY source filename typo) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 42 726 Tm (Third issue, after correcting the image tag.) Tj ET
+0.9 w 42 710 m 570 710 l S
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 682.5 Tm (Starter mistake: COPY index.htm ... refers to a file that is not present. The page file) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 668.5 Tm (is named index.html. Confirm with ls, then fix the COPY source.) Tj ET
+0 0 0 rg BT /F2 9 Tf 1 0 0 1 42 651 Tm (Change this) Tj ET
+q 0.10 0.12 0.15 rg 42 610 528 34 re f Q
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 630.8 Tm (COPY index.htm /usr/share/nginx/html/index.html) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 618.8 Tm (COPY index.html /usr/share/nginx/html/index.html) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 588.5 Tm (Example reason: I changed index.htm to index.html because that is the actual web page) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 574.5 Tm (filename in the build context.) Tj ET
+0 0 0 rg BT /F2 9 Tf 1 0 0 1 42 557 Tm (Illustrative build failure - not a screenshot) Tj ET
+q 0.10 0.12 0.15 rg 42 480 528 70 re f Q
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 536.8 Tm ($ ls) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 524.8 Tm (Dockerfile  docker-compose.yml  index.html  .env) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 512.8 Tm () Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 500.8 Tm ($ docker compose up -d --build) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 488.8 Tm (COPY failed: file not found in build context: index.htm) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 458.5 Tm (E1 should include the actual not-found message and ls result from your run. After) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 444.5 Tm (changing the source filename, rerun the same build command.) Tj ET
+0.5 w 42 34 m 570 34 l S
+0 0 0 rg BT /F1 8 Tf 1 0 0 1 42 18 Tm (Ayush Raj | Roll No: 2400290120082 | Practice example - illustrative output) Tj ET
+0 0 0 rg BT /F1 8 Tf 1 0 0 1 555 18 Tm (5) Tj ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 14 0 R >>
+endobj
+16 0 obj
+<< /Length 1902 >>
+stream
+0 0 0 rg BT /F2 18 Tf 1 0 0 1 42 744 Tm (Q1\(d\): Container-side port typo) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 42 726 Tm (Fourth issue, after the image builds.) Tj ET
+0.9 w 42 710 m 570 710 l S
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 682.5 Tm (Starter mapping uses ${HOST_PORT}:8080. The left side is the host port; nginx listens on) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 668.5 Tm (port 80 inside the container. Change only the right side to 80.) Tj ET
+0 0 0 rg BT /F2 9 Tf 1 0 0 1 42 651 Tm (Change this) Tj ET
+q 0.10 0.12 0.15 rg 42 610 528 34 re f Q
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 630.8 Tm (- "${HOST_PORT}:8080") Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 618.8 Tm (- "${HOST_PORT}:80") Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 588.5 Tm (Example reason: I changed the container port from 8080 to 80 because nginx listens on) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 574.5 Tm (port 80 inside the container.) Tj ET
+0 0 0 rg BT /F2 9 Tf 1 0 0 1 42 557 Tm (Illustrative failed request and port listing - not a screenshot) Tj ET
+q 0.10 0.12 0.15 rg 42 480 528 70 re f Q
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 536.8 Tm ($ curl http://localhost:8082) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 524.8 Tm (curl: \(7\) Failed to connect to localhost port 8082) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 512.8 Tm () Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 500.8 Tm ($ docker compose ps) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 488.8 Tm (PORTS: 0.0.0.0:8082->8080/tcp) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 458.5 Tm (E1 is your own failed curl plus docker compose ps. After correcting the mapping and) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 444.5 Tm (rerunning compose, curl http://localhost:8082 should return the page.) Tj ET
+0.5 w 42 34 m 570 34 l S
+0 0 0 rg BT /F1 8 Tf 1 0 0 1 42 18 Tm (Ayush Raj | Roll No: 2400290120082 | Practice example - illustrative output) Tj ET
+0 0 0 rg BT /F1 8 Tf 1 0 0 1 555 18 Tm (6) Tj ET
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 16 0 R >>
+endobj
+18 0 obj
+<< /Length 1888 >>
+stream
+0 0 0 rg BT /F2 18 Tf 1 0 0 1 42 744 Tm (Q2: Run a second container by hand) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 42 726 Tm (Do not use Compose for the second container.) Tj ET
+0.9 w 42 710 m 570 710 l S
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 682.5 Tm (The image built by Compose is web-2400290120082:v1. HOST_PORT is 8082, so the second) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 668.5 Tm (host port is 8083. Publish host 8083 to container port 80.) Tj ET
+0 0 0 rg BT /F2 9 Tf 1 0 0 1 42 651 Tm (Example command) Tj ET
+q 0.10 0.12 0.15 rg 42 610 528 34 re f Q
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 630.8 Tm (docker run -d --name second-2400290120082 \\) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 618.8 Tm (  -p 8083:80 web-2400290120082:v1) Tj ET
+0 0 0 rg BT /F2 9 Tf 1 0 0 1 42 589 Tm (Illustrative successful checks - not screenshots) Tj ET
+q 0.10 0.12 0.15 rg 42 488 528 94 re f Q
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 568.8 Tm ($ curl http://localhost:8083) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 556.8 Tm (<h1>MSE-II Docker Lab</h1>) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 544.8 Tm (<p>Name: Ayush Raj</p>) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 532.8 Tm () Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 520.8 Tm ($ docker ps --format "table {{.Names}}\\t{{.Ports}}") Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 508.8 Tm (web-2400290120082    0.0.0.0:8082->80/tcp) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 496.8 Tm (second-2400290120082 0.0.0.0:8083->80/tcp) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 466.5 Tm (Capture your real docker run output, curl response, and docker ps. Afterward remove the) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 452.5 Tm (hand-started container: docker rm -f second-2400290120082.) Tj ET
+0.5 w 42 34 m 570 34 l S
+0 0 0 rg BT /F1 8 Tf 1 0 0 1 42 18 Tm (Ayush Raj | Roll No: 2400290120082 | Practice example - illustrative output) Tj ET
+0 0 0 rg BT /F1 8 Tf 1 0 0 1 555 18 Tm (7) Tj ET
+endstream
+endobj
+19 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 18 0 R >>
+endobj
+20 0 obj
+<< /Length 1679 >>
+stream
+0 0 0 rg BT /F2 18 Tf 1 0 0 1 42 744 Tm (Q3\(i\): Edit the page without rebuilding) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 42 726 Tm (Use a bind mount for the web root.) Tj ET
+0.9 w 42 710 m 570 710 l S
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 682.5 Tm (Create site next to docker-compose.yml and copy index.html into site/index.html. Under) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 668.5 Tm (web, mount that folder to nginx document root:) Tj ET
+0 0 0 rg BT /F2 9 Tf 1 0 0 1 42 651 Tm (Compose volume entry) Tj ET
+q 0.10 0.12 0.15 rg 42 610 528 34 re f Q
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 630.8 Tm (    volumes:) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 618.8 Tm (      - ./site:/usr/share/nginx/html) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 588.5 Tm (Add this line inside the body in site/index.html: <p>Edited without rebuild</p>. Then) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 574.5 Tm (run without --build:) Tj ET
+0 0 0 rg BT /F2 9 Tf 1 0 0 1 42 557 Tm (Example verification) Tj ET
+q 0.10 0.12 0.15 rg 42 504 528 46 re f Q
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 536.8 Tm (docker compose up -d) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 524.8 Tm (curl http://localhost:8082) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 512.8 Tm (<p>Edited without rebuild</p>) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 482.5 Tm (The mount makes the container serve files from ./site on your computer. Capture the) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 468.5 Tm (compose volume lines and your actual up/curl output.) Tj ET
+0.5 w 42 34 m 570 34 l S
+0 0 0 rg BT /F1 8 Tf 1 0 0 1 42 18 Tm (Ayush Raj | Roll No: 2400290120082 | Practice example - illustrative output) Tj ET
+0 0 0 rg BT /F1 8 Tf 1 0 0 1 555 18 Tm (8) Tj ET
+endstream
+endobj
+21 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 20 0 R >>
+endobj
+22 0 obj
+<< /Length 1469 >>
+stream
+0 0 0 rg BT /F2 18 Tf 1 0 0 1 42 744 Tm (Q3\(ii\): Pass the roll number into the container) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 42 726 Tm (Use Compose interpolation from .env.) Tj ET
+0.9 w 42 710 m 570 710 l S
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 682.5 Tm (Under web, add an environment mapping. Do not hard-code the roll number there; use the) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 668.5 Tm (existing ROLL_NO variable from .env.) Tj ET
+0 0 0 rg BT /F2 9 Tf 1 0 0 1 42 651 Tm (Compose environment entry) Tj ET
+q 0.10 0.12 0.15 rg 42 610 528 34 re f Q
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 630.8 Tm (    environment:) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 618.8 Tm (      STUDENT_ROLL: ${ROLL_NO}) Tj ET
+0 0 0 rg BT /F2 9 Tf 1 0 0 1 42 589 Tm (Example verification) Tj ET
+q 0.10 0.12 0.15 rg 42 536 528 46 re f Q
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 568.8 Tm (docker compose up -d) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 556.8 Tm (docker exec web-2400290120082 printenv STUDENT_ROLL) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 544.8 Tm (2400290120082) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 514.5 Tm (Capture the environment line and the real docker exec command/output. The value in the) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 500.5 Tm (output should match ROLL_NO in .env.) Tj ET
+0.5 w 42 34 m 570 34 l S
+0 0 0 rg BT /F1 8 Tf 1 0 0 1 42 18 Tm (Ayush Raj | Roll No: 2400290120082 | Practice example - illustrative output) Tj ET
+0 0 0 rg BT /F1 8 Tf 1 0 0 1 555 18 Tm (9) Tj ET
+endstream
+endobj
+23 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 22 0 R >>
+endobj
+24 0 obj
+<< /Length 1740 >>
+stream
+0 0 0 rg BT /F2 18 Tf 1 0 0 1 42 744 Tm (Q4: Add a health check) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 42 726 Tm (Check nginx from inside its own container.) Tj ET
+0.9 w 42 710 m 570 710 l S
+0 0 0 rg BT /F2 9 Tf 1 0 0 1 42 683 Tm (Healthcheck under web) Tj ET
+q 0.10 0.12 0.15 rg 42 606 528 70 re f Q
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 662.8 Tm (    healthcheck:) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 650.8 Tm (      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1:80/"]) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 638.8 Tm (      interval: 10s) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 626.8 Tm (      timeout: 3s) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 614.8 Tm (      retries: 3) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 584.5 Tm (Run docker compose up -d, wait 20 seconds, then run docker compose ps. Example status:) Tj ET
+0 0 0 rg BT /F2 9 Tf 1 0 0 1 42 567 Tm (Illustrative status - not a screenshot) Tj ET
+q 0.10 0.12 0.15 rg 42 514 528 46 re f Q
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 546.8 Tm ($ docker compose ps) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 534.8 Tm (NAME                   STATUS) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 522.8 Tm (web-2400290120082     Up \(healthy\)) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 492.5 Tm (Example two-sentence explanation: The check runs inside the web container, where nginx) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 478.5 Tm (listens on port 80. HOST_PORT is the host-side published port and is not the container) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 464.5 Tm (listening port.) Tj ET
+0.5 w 42 34 m 570 34 l S
+0 0 0 rg BT /F1 8 Tf 1 0 0 1 42 18 Tm (Ayush Raj | Roll No: 2400290120082 | Practice example - illustrative output) Tj ET
+0 0 0 rg BT /F1 8 Tf 1 0 0 1 555 18 Tm (10) Tj ET
+endstream
+endobj
+25 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 24 0 R >>
+endobj
+26 0 obj
+<< /Length 2111 >>
+stream
+0 0 0 rg BT /F2 18 Tf 1 0 0 1 42 744 Tm (Final files: Compose and Dockerfile) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 42 726 Tm (Reference configuration after all requested changes.) Tj ET
+0.9 w 42 710 m 570 710 l S
+0 0 0 rg BT /F2 9 Tf 1 0 0 1 42 683 Tm (docker-compose.yml) Tj ET
+q 0.10 0.12 0.15 rg 42 462 528 214 re f Q
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 662.8 Tm (services:) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 650.8 Tm (  web:) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 638.8 Tm (    build: .) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 626.8 Tm (    image: web-${ROLL_NO}:v1) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 614.8 Tm (    container_name: web-${ROLL_NO}) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 602.8 Tm (    ports:) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 590.8 Tm (      - "${HOST_PORT}:80") Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 578.8 Tm (    restart: unless-stopped) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 566.8 Tm (    volumes:) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 554.8 Tm (      - ./site:/usr/share/nginx/html) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 542.8 Tm (    environment:) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 530.8 Tm (      STUDENT_ROLL: ${ROLL_NO}) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 518.8 Tm (    healthcheck:) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 506.8 Tm (      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1:80/"]) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 494.8 Tm (      interval: 10s) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 482.8 Tm (      timeout: 3s) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 470.8 Tm (      retries: 3) Tj ET
+0 0 0 rg BT /F2 9 Tf 1 0 0 1 42 441 Tm (Dockerfile) Tj ET
+q 0.10 0.12 0.15 rg 42 388 528 46 re f Q
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 420.8 Tm (FROM nginx:alpine) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 408.8 Tm (COPY index.html /usr/share/nginx/html/index.html) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 396.8 Tm (EXPOSE 80) Tj ET
+0.5 w 42 34 m 570 34 l S
+0 0 0 rg BT /F1 8 Tf 1 0 0 1 42 18 Tm (Ayush Raj | Roll No: 2400290120082 | Practice example - illustrative output) Tj ET
+0 0 0 rg BT /F1 8 Tf 1 0 0 1 555 18 Tm (11) Tj ET
+endstream
+endobj
+27 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 26 0 R >>
+endobj
+28 0 obj
+<< /Length 1655 >>
+stream
+0 0 0 rg BT /F2 18 Tf 1 0 0 1 42 744 Tm (Final files: environment and web page) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 42 726 Tm (Keep .env aligned with your confirmed roll number.) Tj ET
+0.9 w 42 710 m 570 710 l S
+0 0 0 rg BT /F2 9 Tf 1 0 0 1 42 683 Tm (.env) Tj ET
+q 0.10 0.12 0.15 rg 42 642 528 34 re f Q
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 662.8 Tm (ROLL_NO=2400290120082) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 650.8 Tm (HOST_PORT=8082) Tj ET
+0 0 0 rg BT /F2 9 Tf 1 0 0 1 42 621 Tm (index.html \(the body content can be kept simple\)) Tj ET
+q 0.10 0.12 0.15 rg 42 496 528 118 re f Q
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 600.8 Tm (<!doctype html>) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 588.8 Tm (<html>) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 576.8 Tm (  <body>) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 564.8 Tm (    <h1>MSE-II Docker Lab</h1>) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 552.8 Tm (    <p>Name: Ayush Raj</p>) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 540.8 Tm (    <p>Roll No: 2400290120082</p>) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 528.8 Tm (    <p>Edited without rebuild</p>) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 516.8 Tm (  </body>) Tj ET
+1 1 1 rg BT /F3 8.2 Tf 1 0 0 1 51 504.8 Tm (</html>) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 474.5 Tm (Keep a copy of this page at site/index.html for the bind mount. The Q1\(c\) build still) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 460.5 Tm (uses the root index.html copied by the Dockerfile.) Tj ET
+0.5 w 42 34 m 570 34 l S
+0 0 0 rg BT /F1 8 Tf 1 0 0 1 42 18 Tm (Ayush Raj | Roll No: 2400290120082 | Practice example - illustrative output) Tj ET
+0 0 0 rg BT /F1 8 Tf 1 0 0 1 555 18 Tm (12) Tj ET
+endstream
+endobj
+29 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 28 0 R >>
+endobj
+30 0 obj
+<< /Length 1393 >>
+stream
+0 0 0 rg BT /F2 18 Tf 1 0 0 1 42 744 Tm (How to capture your practice evidence) Tj ET
+0 0 0 rg BT /F1 9 Tf 1 0 0 1 42 726 Tm (Use real terminal captures if you want to rehearse submission format.) Tj ET
+0.9 w 42 710 m 570 710 l S
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 682.5 Tm (Open a terminal in the lab folder, set the roll-number/time prompt, and capture the) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 668.5 Tm (entire terminal window. Include the command, prompt, and output in every capture.) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 650.5 Tm (For Q1\(a\)-\(d\), take E1 before fixing each particular mistake. Write the reason in your) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 636.5 Tm (own words. For E3, include the corrected file text and a successful command result as) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 622.5 Tm (the assignment requests.) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 604.5 Tm (Do not crop, reuse, or relabel an illustrative panel from this guide as a real) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 590.5 Tm (screenshot. The dark panels in this PDF are examples only; run the commands locally to) Tj ET
+0 0 0 rg BT /F1 9.5 Tf 1 0 0 1 42 576.5 Tm (create genuine evidence.) Tj ET
+0.5 w 42 34 m 570 34 l S
+0 0 0 rg BT /F1 8 Tf 1 0 0 1 42 18 Tm (Ayush Raj | Roll No: 2400290120082 | Practice example - illustrative output) Tj ET
+0 0 0 rg BT /F1 8 Tf 1 0 0 1 555 18 Tm (13) Tj ET
+endstream
+endobj
+31 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 30 0 R >>
+endobj
+xref
+0 32
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000207 00000 n 
+0000000277 00000 n 
+0000000352 00000 n 
+0000000420 00000 n 
+0000002518 00000 n 
+0000002664 00000 n 
+0000004385 00000 n 
+0000004531 00000 n 
+0000006460 00000 n 
+0000006608 00000 n 
+0000008424 00000 n 
+0000008572 00000 n 
+0000010569 00000 n 
+0000010717 00000 n 
+0000012672 00000 n 
+0000012820 00000 n 
+0000014761 00000 n 
+0000014909 00000 n 
+0000016641 00000 n 
+0000016789 00000 n 
+0000018311 00000 n 
+0000018459 00000 n 
+0000020252 00000 n 
+0000020400 00000 n 
+0000022564 00000 n 
+0000022712 00000 n 
+0000024420 00000 n 
+0000024568 00000 n 
+0000026014 00000 n 
+trailer
+<< /Size 32 /Root 1 0 R >>
+startxref
+26162
+%%EOF
